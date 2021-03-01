@@ -4,6 +4,10 @@
     "name": "logicalis-demo",
     "image": "quay.io/escriche/logicalis-demo",
     "essential": true,
+    "Authentication": {
+        "Bucket": "pruebalunes1234",
+        "Key": "mydockercfg"
+      },
     "portMappings": [
       {
         "hostPort": 80,
