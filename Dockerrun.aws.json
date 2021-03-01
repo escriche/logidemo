@@ -2,12 +2,8 @@
   "AWSEBDockerrunVersion": "1",
   "Image": {
     "name": "logicalis-demo",
-    "image": "quay.io/escriche/logicalis-demo",
+    "image": "alpine:latest",
     "essential": true,
-    "Authentication": {
-        "Bucket": "pruebalunes1234",
-        "Key": ".dockercfg"
-      },
     "portMappings": [
       {
         "hostPort": 80,
