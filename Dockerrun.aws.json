@@ -1,15 +1,14 @@
 {
-  "AWSEBDockerrunVersion": "1",
-  "Image": {
-    "name": "logicalis-demo",
-    "image": "alpine:latest",
-    "essential": true,
-    "portMappings": [
-      {
-        "hostPort": 80,
-        "containerPort": 80
-      }
-  ],
-  "Entrypoint": "nginx",
-  "Command": "-g daemon off;"     
+	"AWSEBDockerrunVersion": "1",
+	"Image": {
+		"name": "alpine:latest",
+		"update": "true"
+	},
+	"essential": true,
+	"portMappings": [{
+		"hostPort": 80,
+		"containerPort": 80
+	}],
+	"Entrypoint": "/usr/sbin/nginx",
+	"Command": "-g daemon off;"
 }
