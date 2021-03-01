@@ -1,13 +1,15 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "name": "nginx-proxy",
-    "image": "nginx",
+    "name": "logicalis-demo",
+    "image": "quay.io/escriche/logicalis-demo",
     "essential": true,
     "portMappings": [
       {
         "hostPort": 80,
         "containerPort": 80
       }
-  ],      
+  ],
+  "Entrypoint": "nginx",
+  "Command": "-g daemon off;"     
 }
