@@ -6,7 +6,7 @@
     "essential": true,
     "Authentication": {
         "Bucket": "pruebalunes1234",
-        "Key": "mydockercfg"
+        "Key": ".dockercfg"
       },
     "portMappings": [
       {
