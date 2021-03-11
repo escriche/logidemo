@@ -5,9 +5,8 @@
 		"update": "true"
 	},
 	"essential": true,
-	"portMappings": [{
-		"hostPort": 80,
-		"containerPort": 80
+	"Ports": [{
+		"containerPort": "80"
 	}],
 	"Entrypoint": "/usr/sbin/nginx",
 	"Command": "-g daemon off;"
