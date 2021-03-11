@@ -4,7 +4,6 @@
 		"name": "alpine:latest",
 		"update": "true"
 	},
-	"essential": true,
 	"Ports": [{
 		"containerPort": "80"
 	}],
