@@ -1,12 +1,11 @@
 {
-	"AWSEBDockerrunVersion": "1",
-	"Image": {
-		"name": "alpine",
-		"update": "true"
-	},
-	"Ports": [{
-		"containerPort": "80"
-	}],
-	"Entrypoint": "/usr/sbin/nginx",
-	"Command": "-g daemon off;"
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+      "name": "321160696139.dkr.ecr.us-east-1.amazonaws.com/logidemo",
+      "update": "true"
+  },
+  "Ports": [{
+      "ContainerPort": "80",
+      "HostPort": "80"
+  }]
 }
